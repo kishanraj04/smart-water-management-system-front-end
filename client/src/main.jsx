@@ -16,6 +16,9 @@ import WaterAlert from "./pages/WaterAlert.jsx";
 import SensorAlert from "./pages/SensorAlert.jsx";
 import NetworkAlert from "./pages/NetworkAlert.jsx";
 import WaterReports from "./pages/WaterReports.jsx";
+import SensorReports from "./pages/SensorReports.jsx";
+import NetworkReports from "./pages/NetworkReports.jsx";
+import Profile from "./pages/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +56,18 @@ const router = createBrowserRouter([
       {
         path: "reports/water reports",
         element:<WaterReports/>
+      },
+      {
+        path: "reports/sensor reports",
+        element:<SensorReports/>
+      },
+      {
+        path: "reports/network reports",
+        element:<NetworkReports/>
+      },
+      {
+        path:"profile/profile",
+        element:<Profile/>
       }
     ],
   },
