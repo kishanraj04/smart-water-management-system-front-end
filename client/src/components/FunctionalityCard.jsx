@@ -9,26 +9,20 @@ function FunctionalityCard({ autoMode, setAutoMode }) {
         <span className="text-gray-600">Enable Auto System</span>
 
         <label className="flex items-center gap-3 cursor-pointer">
-          {/* Hidden input */}
-          <input
-            type="checkbox"
-            checked={autoMode}
-            onChange={() => setAutoMode(!autoMode)}
-            className="sr-only peer"
-          />
-
-          {/* Switch */}
-          <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-500 transition-colors duration-300 relative">
+          <div
+            onClick={() => setAutoMode(!autoMode)}
+            className={`w-12 h-6 rounded-full p-1 transition-all ${
+              autoMode ? "bg-blue-500" : "bg-gray-300"
+            }`}
+          >
             <div
-              className="w-5 h-5 bg-white rounded-full absolute top-0.5 left-0.5 transition-all duration-300
-                 peer-checked:translate-x-5"
-            ></div>
+              className={`w-4 h-4 bg-white rounded-full transition-all ${
+                autoMode ? "translate-x-6" : ""
+              }`}
+            />
           </div>
 
-          {/* Label */}
-          <span className="text-gray-600 text-sm">
-            {autoMode ? " ON" : " OFF"}
-          </span>
+          <span>{autoMode ? "ON" : "OFF"}</span>
         </label>
       </label>
 

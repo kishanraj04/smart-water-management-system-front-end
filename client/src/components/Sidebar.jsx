@@ -32,7 +32,7 @@ export default function Sidebar() {
       title:"Alerts",
       key:"alert",
       basePath:"/alert",
-      items:["Water Related Alert"]
+      items:["All Alert","Water Alert","Sensor Alert","Network Alert"]
     },
     {
       title:"Reports",
@@ -49,7 +49,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-60 h-[88vh] bg-slate-900 text-white fixed top-[80px] left-0 shadow-lg z-50">
+    <div className="w-60 bg-slate-900 text-white fixed top-[80px] left-0 shadow-lg z-50">
 
       {/* Header */}
       <div className="px-6 py-5 border-b border-slate-700">
@@ -58,9 +58,7 @@ export default function Sidebar() {
 
       {/* Menu */}
       <div className="p-2">
-        <ul>
-
-          {/* Dashboard */}
+<ul className="h-[70vh] overflow-y-auto hide-scrollbar space-y-2">          {/* Dashboard */}
           <li>
             <NavLink
               to="/dashboard"

@@ -11,6 +11,7 @@ import {
 import Dashboard from "./pages/Dashboard.jsx";
 import TankInformation from "./pages/TankInformation.jsx";
 import Functionality from "./pages/Functionality.jsx";
+import Alerts from "./pages/Alerts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,12 @@ const router = createBrowserRouter([
       {
         path: "features/functionality",
         element:<Functionality />,
+      },
+      {
+        path: "alert/All Alert",
+        element:<Alerts />,
+      },
+      {
       }
     ],
   },
