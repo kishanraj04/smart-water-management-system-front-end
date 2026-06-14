@@ -26,7 +26,7 @@ export default function Sidebar() {
       title: "Features",
       key: "features",
       basePath: "/features",
-      items: ["Feature 1"],
+      items: ["Functionality"],
     },
     {
       title:"Alerts",
