@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import TankInformation from "./pages/TankInformation.jsx";
 import Functionality from "./pages/Functionality.jsx";
 import Alerts from "./pages/Alerts.jsx";
+import WaterAlert from "./pages/WaterAlert.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
         element:<Alerts />,
       },
       {
+        path:"alert/water alert",
+        element:<WaterAlert/>,
       }
     ],
   },
